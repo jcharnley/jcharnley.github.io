@@ -58,7 +58,7 @@ nav ul li {
     color: rgb(0,128,178);
 }
 
-@media only screen and (max-width: 760px) {
+@media screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -204,7 +204,7 @@ background-position: center center;
   transition: 200ms;
 }
 
-@media only screen and (max-width: 760px) {
+@media screen and (max-width: 600px) {
 	.main_container {
 		flex-direction: column;
 	}
@@ -373,7 +373,7 @@ img.mobile {
 	padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 664px) {
+@media screen and (max-width: 600px) {
 
 	.container {
 		flex-wrap: wrap;
@@ -456,7 +456,7 @@ span.discription {
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 664px) {
+@media screen and (max-width: 600px) {
 
 .courses{
 	display: flex;
@@ -500,7 +500,7 @@ p.favPics {
 	padding-bottom: 3rem;
 }
 
-@media only screen and (max-width: 664px) {
+@media screen and (max-width: 600px) {
 
 .subInfoBottom {
 	width: 100%;
