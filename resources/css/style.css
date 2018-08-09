@@ -207,13 +207,15 @@ background-position: center center;
 @media screen and (max-width: 600px) {
 	.main_container {
 		flex-direction: column;
+		height: 400px;
+		padding-top: 25px;
 	}
 	.banner {
 	width: 100%;
 	padding: 0rem;
 }
 	.banner img {	
-	width: auto%;
+	width: auto;
 	overflow: hidden;
    }
    /*.heading {
@@ -504,6 +506,7 @@ p.favPics {
 
 .subInfoBottom {
 	width: 100%;
+	height: 350px;
 }
 .mainInfo2 {
 	width: 100%;
@@ -518,6 +521,7 @@ p.favPics {
 
 
 }
+
 
 }
 
