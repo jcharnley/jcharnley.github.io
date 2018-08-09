@@ -2,11 +2,14 @@ html {
     font-family: Open Sans;
     font-size: 14px;
     margin: 0;
+
 }
 
 h2 {
+	font-size: 1.5rem;
 	color: rgb(0,128,178);
 }
+
 
 
 /* header navigation */
@@ -18,7 +21,7 @@ header .mobile {
 }
 
 header {
-     height: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #aecbde;
@@ -50,7 +53,8 @@ nav ul li {
 }
 
 .repoIcons img {
-    width: 50px;
+    height: 32px;
+    width: 32px;
     color: rgb(0,128,178);
 }
 
@@ -115,33 +119,44 @@ nav ul li {
 #fontStyle1 {
 	font-weight: 700;
 	opacity: 0.8;
+	font-family: 'Bangers';
 }
 
 #fontStyle2 {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	font-weight: 500;
 	opacity: 0.4;
+	font-family: 'Bangers';
 }
 
 .container {
 	display: flex;
-    padding: 32px 72px;
+   	padding: 2rem 1.5rem;
     background-color: #F7F7F7;
 }
 
-/*.main_container {
-	display: flex;
-}*/
+.main_container {
+	height: 662px;
+	width: auto;
+}
 
-/*.banner {
-	width: 50%;
-	padding: 2rem 1.5rem;
-}*/
+.banner {
+	height: 100%;
+	width: auto;
+	background-image: url(../images/front_end.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+background-position: center center;
+  
+	/*padding: 2rem 1.5rem;*/
+}
 
-.banner img {		
+/*.banner img {		
     width: 100%;
     height: auto;
-    margin-top: 100px;
 }
+*/
 
 /*.heading {
 	width: 50%;
@@ -255,16 +270,19 @@ img.mobile {
 }
 
 .subInfo {
-	width: 30%;
+	width: 40%;
     display: flex;
     flex-direction: column;
     /* padding-top: 1rem; */
     /* padding-left: 1.5rem; */
     /* background-color: #F7F7F7; */
+    background-color: #FFF;
+    box-sizing: border-box;
+    border: 1pc solid #EEE;
     padding: 2rem 1.5rem;
 }
 .subInfo h1 {
-	padding-top: 2rem; 	
+	padding-top: 1rem; 	
 	color: rgb(0,128,178);
 	font-size: 1.7rem;
     font-weight: bold;
@@ -284,7 +302,7 @@ img.mobile {
 	flex-direction: column;
 	padding: 2rem 1.5rem;
 	background-color: #F7F7F7;
-	height: 400px;
+	height: 520px;
  }
 
  .personal  {
@@ -326,7 +344,7 @@ img.mobile {
 }
 
 .media-content {
-	padding-bottom: 16px;
+	/*padding-bottom: 16px;*/
 	width: 40%;
 	display: flex;
 }
@@ -336,7 +354,7 @@ img.mobile {
 .section {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 60%;
 	/*justify-content: center;*/
 	padding-left: 16px;
 	
@@ -356,16 +374,18 @@ img.mobile {
 }
 
 @media only screen and (max-width: 664px) {
+
+	.container {
+		flex-wrap: wrap;
+	}
 	.mainInfo {
 		width: 100%
-	}
+		}
 	
 
 	.subInfo {
 		width: 100%
-		padding: 1rem 1rem 2rem 1rem;
-		display: none;
- 
+					 
 	}
 
 	.readMore {
@@ -383,9 +403,10 @@ img.mobile {
 
 
 .featureHeading {
-	text-align: center;
+	text-align: left;
 	padding-top: 2rem;
 	padding-bottom: 1rem;
+	padding-left: 2rem;
 	font-size: 2rem;
 	font-weight: 750;
 	background-color: #F7F7F7;	
@@ -394,7 +415,6 @@ img.mobile {
 
 .courses {
 	display: flex;
-	padding: 32px 72px;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	background-color: #F7F7F7;	
@@ -408,11 +428,16 @@ img.mobile {
 .courseName {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+	font-weight: 550;
 }
  
 h3.feature {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+}
+
+.course-image {
+    background-color: white;
 }
 
 .course-image img {
@@ -427,11 +452,15 @@ h3.feature {
 	background-color: white;
 }
 
+span.discription {
+    font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 664px) {
 
 .courses{
 	display: flex;
-    padding: 32px 72px;
+    /*padding: 32px 72px;*/
     flex-direction: column;
     justify-content: space-evenly;
 	background-color: #F7F7F7;	
@@ -440,45 +469,53 @@ h3.feature {
 	padding-bottom: 2rem;
 	width: 100%;
 }
-
+}
 /* main information*/
 
 .mainInfo2 {
 	width: 52%;
 	padding: 2rem 1.5rem;
 	background-color: #F7F7F7;
-	height: 400px;
+	height: 500px;
+
 	overflow: hidden;
 }
-
+#videoDesp {
+	padding-top: 24px;
+	padding-bottom: 8px;
 }
-.featureHeadingThesis {
-	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	font-size: 2rem;
-	font-weight: 750;
-	background-color: #F7F7F7;
 
+
+.featureHeadingThesis {
+	text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 750;
+    background-color: #F7F7F7;
+}
+
+p.favPics {
+	padding-bottom: 3rem;
 }
 
 @media only screen and (max-width: 664px) {
 
 .subInfoBottom {
-	display: none;
+	width: 100%;
 }
-
 .mainInfo2 {
 	width: 100%;
 	display: block;
 
 }
 .mainInfo2 h1 {
-	display: none;
+	
 }
 
 .mainInfo2 p {
-	display: none;
+
 
 }
 
@@ -488,21 +525,21 @@ footer {
 	font-size: 150px;
 }
 .social-media {
-	background-color: #f3f3f3;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+	/*background-color: #f3f3f3;*/
+	background-color: #white;
+    padding: 2rem;
 }
 .social-icon {
 	/*color: rgb(255, 204, 128);*/
 	/*color: black;*/
-	color: rgb(0,128,178);
+	color: black;
 	width: 50px;
 }
 
 #icons {
 	display: flex;
     justify-content: space-evenly;
-    font-size: 5rem;
+    font-size: 32px;
 
   }
 
