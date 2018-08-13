@@ -1,5 +1,5 @@
 	html {
-		font-family: Open Sans;
+		font-family: 'Roboto', sans-serif;
 		font-size: 14px;
 		margin: 0;
 	}
@@ -340,7 +340,7 @@
 
 		.subInfo {
 			width: 100%
-			
+
 		}
 		.desktop {
 			display: none;
